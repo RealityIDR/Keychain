@@ -1,3 +1,5 @@
+import { Linking } from 'react-native';
+
 export default { 
     civic: {
         source: require('../../assets/images/civicicon.png')

@@ -13,7 +13,7 @@ const TaskbarButton = (props) => {
         <View style={styles.container}>
             <TouchableOpacity 
                 style={styles.touchable}
-                onPress={() => console.warn('Yes')}
+                onPress={onPress}
                 >
                 <Image style={style} source={source} />
             </TouchableOpacity>

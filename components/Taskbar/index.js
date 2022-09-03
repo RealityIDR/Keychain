@@ -16,6 +16,7 @@ const Taskbar = () => {
             <View style={styles.button}>
                 <TaskbarButton 
                 source={buttons.spotify.source} 
+                onPress={buttons.spotify.onPress}
                 imageWidth={buttons.spotify.imageWidth}
                 imageHeight={buttons.spotify.imageHeight}
                 />
