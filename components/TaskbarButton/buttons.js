@@ -2,13 +2,13 @@ import { Linking } from 'react-native';
 
 export default { 
     civic: {
-        source: require('../../assets/images/civicicon.png')
+        source: require('../../assets/images/civicicon.png'),
     },
 
     spotify: {
         source: require('../../assets/images/spotifylogo.png'),
         imageWidth: '70%',
-        imageHeight: '70%',  
+        imageHeight: '70%',
     },
 
     lock: {
