@@ -6,7 +6,10 @@ const styles = StyleSheet.create({
         width: '67.5%',
         height: '100%',
         right: '0%',
-        backgroundColor: 'blue',
+    },
+    application: {
+        width: "100%",
+        height: "100%",
     }
 });
 

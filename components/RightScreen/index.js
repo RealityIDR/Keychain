@@ -7,7 +7,7 @@ const RightScreen = (props) => {
     return (
         <View style={styles.container}>
             <MapView
-                style={{height: 100, width: 100}}
+                style={styles.application}
                 initialRegion={{
                 latitude: 37.78825,
                 longitude: -122.4324,
