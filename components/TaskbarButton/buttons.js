@@ -1,4 +1,5 @@
-import { Linking } from 'react-native';
+import { Alert, Linking } from 'react-native';
+var SendIntentAndroid = require("react-native-send-intent");
 
 export default { 
     civic: {
@@ -7,6 +8,16 @@ export default {
 
     spotify: {
         source: require('../../assets/images/spotifylogo.png'),
+        onPress: () => SendIntentAndroid.isAppInstalled('com.spotify.music').then((isInstalled) => {
+            if (isInstalled) {
+                SendIntentAndroid.openApp('com.spotify.music').then((wasOpened) => {
+                });
+                console.log("is installed true");
+            }
+            else {
+                Alert.alert('App not installed')
+            }
+        }),
         imageWidth: '70%',
         imageHeight: '70%',
     },
