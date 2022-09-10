@@ -1,4 +1,6 @@
 rootProject.name = 'Keychain'
+include ':react-native-send-intent'
+project(':react-native-send-intent').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-send-intent/android')
 
 apply from: new File(["node", "--print", "require.resolve('expo/package.json')"].execute(null, rootDir).text.trim(), "../scripts/autolinking.gradle");
 useExpoModules()
