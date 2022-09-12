@@ -8,7 +8,9 @@ export default {
 
     spotify: {
         source: require('../../assets/images/spotifylogo.png'),
-        onPress: () => SendIntentAndroid.isAppInstalled('com.spotify.music').then((isInstalled) => {
+        onPress: () => Linking.openURL('spotify://app'),
+        
+        /* () => SendIntentAndroid.isAppInstalled('com.spotify.music').then((isInstalled) => {
             if (isInstalled) {
                 SendIntentAndroid.openApp('com.spotify.music').then((wasOpened) => {
                 });
@@ -17,7 +19,7 @@ export default {
             else {
                 Alert.alert('App not installed')
             }
-        }),
+        }), */
         imageWidth: '70%',
         imageHeight: '70%',
     },
