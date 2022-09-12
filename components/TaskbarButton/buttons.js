@@ -9,17 +9,6 @@ export default {
     spotify: {
         source: require('../../assets/images/spotifylogo.png'),
         onPress: () => Linking.openURL('spotify://app'),
-        
-        /* () => SendIntentAndroid.isAppInstalled('com.spotify.music').then((isInstalled) => {
-            if (isInstalled) {
-                SendIntentAndroid.openApp('com.spotify.music').then((wasOpened) => {
-                });
-                console.log("is installed true");
-            }
-            else {
-                Alert.alert('App not installed')
-            }
-        }), */
         imageWidth: '70%',
         imageHeight: '70%',
     },
@@ -28,5 +17,12 @@ export default {
         source: require('../../assets/images/lock.png'),
         imageWidth: '55%',
         imageHeight: '65%',
+    },
+
+    youtube: {
+        source: require('../../assets/images/youtubelogo.png'),
+        onPress: () => Linking.openURL('https://www.youtube.com'),
+        imageWidth: '80%',
+        imageHeight: '80%',
     }
 };
