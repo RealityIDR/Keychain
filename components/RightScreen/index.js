@@ -15,6 +15,7 @@ const RightScreen = (props) => {
                 longitudeDelta: 0.0421,
                 }}
             />
+            <View style={styles.widget}></View>
         </View>
     );
 };

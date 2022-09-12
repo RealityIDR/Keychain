@@ -10,6 +10,16 @@ const styles = StyleSheet.create({
     application: {
         width: "100%",
         height: "100%",
+    },
+    widget: {
+        position: 'absolute',
+        width: '95%',
+        height: '13%',
+        backgroundColor: '#1D1D1D',
+        right: 22.5,
+        bottom: '10%',
+        borderTopLeftRadius: 10,
+        borderRadius: 10,
     }
 });
 

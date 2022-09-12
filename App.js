@@ -11,7 +11,6 @@ export default function App() {
     <View style={styles.container}>
       <CarInfo />
       <RightScreen />
-      <RightBottomWidget />
       <Taskbar />
       <StatusBar style="auto" />
     </View>
