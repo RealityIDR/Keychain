@@ -2,7 +2,6 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import Taskbar from './components/Taskbar';
 import CarInfo from './components/CarInfo';
-import RightBottomWidget from './components/RightBottomWidget';
 import RightScreen from './components/RightScreen';
 
 
