@@ -1,5 +1,7 @@
 import { Alert, Linking } from 'react-native';
 var SendIntentAndroid = require("react-native-send-intent");
+import RightScreen from '../RightScreen';
+import { View } from 'react-native';
 
 export default { 
     civic: {
@@ -15,6 +17,7 @@ export default {
 
     lock: {
         source: require('../../assets/images/lock.png'),
+        onPress: () => console.log('Y'),
         imageWidth: '55%',
         imageHeight: '65%',
     },
