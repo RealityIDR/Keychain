@@ -13,13 +13,14 @@ const CarInfo = (props) => {
               let posArray = pos.split(',');
               posArray = (posArray[2]);
               posArray = posArray.slice(18);
+              posArray = posArray.toFixed();
               setPosition(posArray);
             },
-            (error) => Alert.alert('WatchPosition Error', JSON.stringify(error))
+            
           );
           setSubscriptionId(watchID);
         } catch (error) {
-          Alert.alert('WatchPosition Error', JSON.stringify(error));
+          alert('WatchPosition Error', JSON.stringify(error));
         }
       };
     
