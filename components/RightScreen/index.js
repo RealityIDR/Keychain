@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text } from 'react-native';
 import styles from './styles';
-import MapView from 'react-native-maps';
 import Navigation from '../Navigation';
 
 const RightScreen = (props) => {
