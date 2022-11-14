@@ -8,6 +8,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'black',
         bottom: 0,
         flexDirection: 'row',
+        display: 'flex',
+        justifyContent: 'center',
     },
 
     button: {
