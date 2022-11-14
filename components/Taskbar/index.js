@@ -31,6 +31,14 @@ const Taskbar = () => {
             </View>
             <View style={styles.button}>
                 <TaskbarButton 
+                source={buttons.maps.source} 
+                onPress={buttons.maps.onPress}
+                imageWidth={buttons.maps.imageWidth}
+                imageHeight={buttons.maps.imageHeight}
+                />
+            </View>
+            <View style={styles.button}>
+                <TaskbarButton 
                 source={buttons.lock.source} 
                 onPress={buttons.lock.onPress}
                 imageWidth={buttons.lock.imageWidth}

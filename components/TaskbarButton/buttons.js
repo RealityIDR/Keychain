@@ -27,5 +27,12 @@ export default {
         onPress: () => Linking.openURL('https://www.youtube.com'),
         imageWidth: '80%',
         imageHeight: '80%',
+    },
+
+    maps: {
+        source: require('../../assets/images/mapslogo.png'),
+        onPress: () => Linking.openURL('https://maps.google.com'),
+        imageWidth: '50%',
+        imageHeight: '70%',
     }
 };
